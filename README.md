@@ -1,6 +1,6 @@
 # gaming_effect_randomf
-data used can be found https://data.mendeley.com/datasets/c53rh2h435/3.
-Steps follwed:
+data used can be found https://data.mendeley.com/datasets/c53rh2h435/3 .<br>
+Steps follwed:<br>
 loaded data with the help of pandas library 
 pre procsesing done 
 EDA Done
