@@ -1,0 +1,117 @@
+<html>
+<head>
+
+<title>Gaming Effect</title>
+<style>
+
+form {
+
+text-align:center
+}
+
+input{
+width: 50%
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  width: 10%
+}
+
+select {
+width: 50%;
+}
+label {
+  font-size: 20px;
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}​
+
+
+</style>
+</head>
+
+<body>
+<center><h1>Effect Of Gaming: {{ results}}</h1></center>
+
+<form action="{{ url_for('predict')}}" method="post">
+
+
+<label for = "fnam">Name</label>
+<input type = 'text' id = 'fnam', name = 'fn', required = 'required', placeholder = "Enter Name..." />
+
+<br></br>
+
+<label for = "gender">Gender</label>
+<select id="gender" name="gender">
+    <option value="0">Male </option>
+    <option value="1">Female </option>
+</select>
+
+
+<br></br>
+
+
+<label for = "age">Age</label>
+<input type = 'text' id = 'age', name = 'age', required = 'required', placeholder = 'Enter Age...' />
+
+<br></br>
+
+<label for = "mean_hours_gaming">Mean Hours of Gaming per Week</label>
+<input type = 'text' id = 'mean_hours_gaming', name = 'mean_hours_gaming', required = 'required', placeholder = '20' />
+
+<br></br>
+
+<label for = "period_considered_as_gamer">period considered as him as gamer</label>
+<input type = 'text' id = 'period_considered_as_gamer', name = 'period_considered_as_gamer', required = 'required', placeholder = '25' />
+
+<br></br>
+
+<label for = "insonmia">Insomnia Severity Index</label>
+<input type = 'text' id = 'insonmia', name = 'insonmia', required = 'required', placeholder = '1-25' />
+
+<br></br>
+
+<label for = "daytime_sleep">Excessive daytime sleepiness</label>
+<input type = 'text' id = 'daytime_sleep', name = 'daytime_sleep', required = 'required', placeholder = '0-25' />
+
+<br></br>
+
+<label for = "anx">Anxiety</label>
+<input type = 'text' id = 'anx', name = 'anx', required = 'required', placeholder = '0-20' />
+
+<br></br>
+
+
+<label for = "dep">Depression</label>
+<input type = 'text' id = 'dep', name = 'dep', required = 'required', placeholder = '0-20' />
+
+<br></br>
+
+
+<label for = "platform">Platform</label>
+<select id="platform" name="platform">
+	<option value="1">Smartphone</option>
+	<option value="2">Computer</option>
+	<option value="3">Console</option>
+	<option value="4">Tablet</option>
+</select>
+
+
+<br></br>
+
+<label></label>
+<input id="submit" type="submit" value="Predict" ></input>
+
+</form>
+
+</body>
+
+
+
+
+
+
+</html>
